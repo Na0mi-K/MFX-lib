@@ -56,6 +56,7 @@ points = {
 type = "VELOCITY"
 ...
 {/CURVE}
+```
 Header: title, tempo, and time signature.
 Track: name, MIDI channel (0-based), and instrument program. The included Für Elise file has 4 tracks (Voice_1 to Voice_4).
 Curves: these come after the [/TRACK] line, and each belongs to the most recent track. Each track has two:
@@ -63,6 +64,7 @@ PITCH: the note number (69 = A4, 72 = C5) at each time.
 VELOCITY: how hard the note is played (0 to 127).
 Points: each is (time_in_seconds, value, 0.0, 0.0). The last two numbers are unused in this file.
 STEP interpolation: a value holds until the next point changes it, like a staircase.
+
 
 # How it works , I have no fucking idea but I guess it does work
 
